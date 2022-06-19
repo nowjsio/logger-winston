@@ -1,0 +1,15 @@
+{
+  "name": "logger-winston",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nowjsio/logger-winston.git",
+  "author": "nowjsio <nowjsio@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "winston": "^3.7.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
