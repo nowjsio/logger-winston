@@ -1,18 +1,24 @@
 # logger-winston
  ## log directory
 - log directory: **/logger-winston/logs**
-- info log: **/logs/info/yyyy-MM/yyyy-MM-dd.info.log**
-- error log: **/logs/error/yyyy-MM/yyyy-MM-dd.error.log**
+    - info log: **/logs/info/yyyy-MM-dd.info.log**
+    - error log: **/logs/error/yyyy-MM-dd.error.log**
+    - exception log: **/logs/exception/yyyy-MM-dd.exception.log**
 ## log format
-- console 
-    - **yyyy-MM-dd-hh-mm-ss-SSS : log-level : message : file-name.file-line**
-
-- log-file
-    - **yyyy-MM-dd-hh-mm-ss-SSS : log-level : message**
+- console-info-log 
+    - **yyyy-MM-dd-hh-mm-ss-SSS : log-level : message :**
+- console-error-log 
+    - **yyyy-MM-dd-hh-mm-ss-SSS : log-level : message : \t error.stack**
+- log-file-info-log 
+    - **yyyy-MM-dd-hh-mm-ss-SSS : log-level : message :**
+- log-file-error-log 
+    - **yyyy-MM-dd-hh-mm-ss-SSS : log-level : message : \t error.stack**
 
 ## log rotate
 - save for 2 moths
     - example:
         - current date : 2022-06
-        - logs/info/2022-04, 2022-05, 2022-06
-        - deleted logs/info/2022-03
+        - logs/info/2022-04-*, 2022-05-*, 2022-06-*
+        - deleted logs/info/2022-03-*
+
+*reference:https://github.com/winstonjs/winston*
