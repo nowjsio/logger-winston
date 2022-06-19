@@ -68,6 +68,7 @@ const logger = winston.createLogger({
 if (process.env.NODE_ENV !== 'prod') {
   logger.add(
     new winston.transports.Console({
+      level: 'debug',
       format: combine(
         colorize({ all: true }), // console 에 출력할 로그 컬러 설정 적용함
         logFormat, // log format 적용
