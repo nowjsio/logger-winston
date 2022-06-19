@@ -11,6 +11,10 @@
     "winston": "^3.7.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.2",
+    "jest": "^28.1.1"
   }
 }
